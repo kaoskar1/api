@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(360deg, #434343 0%, black 100%);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(360deg, #191919 0%, #292929 100%);
+    background: #191919;
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer{
+    background-image: linear-gradient(360deg, #191919 0%, #292929 100%);
+    height: 35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;  
+    width: 100%
+
+}
+
+.searchSection{
+    /* background: whitesmoke; */
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: whitesmoke 0.5px solid;;
+}
+.searchField{
+    height: 60px;
+    width: 380px;
+    border-radius: 55px;
+    background: #59595970;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 100;
+    padding-left: 15px;
+}
+
+
+
+.searchField:focus{
+    height: 60px;
+    width: 380px;
+    border-radius: 55px;
+    background: #59595970;
+    border: #ffffff70 1px solid;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.giveMeANumber{
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+    background: #59595970;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+
+    text-align: center;
+    
+}
+.giveMeANumber:focus{
+    border: #ffffff70 1px solid;
+}
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background: #59595970;
+    border: none;
+    outline: none;
+}
+
+
+.headerLogo{
+    height: 150px;    
+    width: 150px;
+    border: rgb(0, 119, 60,0.30) 3px solid;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+
+h3{
+    color: violet;
+    word-wrap: none;
+}
+.picsGallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: flex-start;
+    grid-gap: 5px;
+    height: 100vh;
+    margin-top: 25px;
+    overflow: scroll;
+}
+    
+
+.fullImageSection{
+    width: 100%;
+
+
+}
+
+.photoBox img {
+    height: 300px;
+    width: 300px;
+
+}
+
+.photoBox img:hover {
+    height: 300px;
+    width: 300px;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
